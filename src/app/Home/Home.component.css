@@ -1,0 +1,22 @@
+h1{
+  text-align: center;
+}
+
+.Header{
+  border: 2px solid rgb(237, 237, 18);
+  border-radius: 10px;
+  margin:40px;
+
+}
+
+.img{
+  border-radius: 10px;
+  justify-content: center;
+  padding: 10px 420px ;
+}
+
+.fotter{
+  border: 2px solid rosybrown;
+  border-radius: 10px;
+  background-color: aqua;
+}

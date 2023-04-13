@@ -1,0 +1,21 @@
+.body{
+  margin: 0;
+}
+nav{
+  border:3px solid red;
+  background-color: dodgerblue;
+  text-align: center;
+
+}
+nav a{
+  text-align: center;
+  padding: 50px;
+  text-decoration: none;
+}
+
+.logo{
+  font-size: 24px;
+  font-weight: bold;
+  justify-content: left;
+  padding-left: 0 80px;
+}

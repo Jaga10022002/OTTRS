@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Ticket booking</title>
+    <style>
+
+     body {
+  width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: rgb(16, 96, 235);
+}
+h1{
+    color: rgba(224, 239, 8, 0.97);
+    text-align: center;
+    font-style: italic;
+    font-size: 25px;
+    margin: 0%;
+    padding: 0%;
+}
+div.elem-group {
+  margin: 20px 0;
+}
+
+div.elem-group.inlined {
+  width: 49%;
+  display: inline-block;
+  float: left;
+  margin-left: 1%;
+}
+
+label {
+  display: block;
+  font-family: 'italic';
+  padding-bottom: 10px;
+  font-size: 1.25em;
+}
+
+input, select, textarea {
+  border-radius: 2px;
+  border: 2px solid rgb(243, 16, 16);
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  width: 100%;
+  padding: 10px;
+}
+
+div.elem-group.inlined input {
+  width: 95%;
+  display: inline-block;
+}
+
+textarea {
+  height: 250px;
+}
+
+hr {
+  border: 1px dotted #ccc;
+}
+
+button {
+  height: 50px;
+  background: rgb(230, 7, 140);
+  border: none;
+  color: white;
+  font-size: 1.25em;
+  font-family: 'arial';
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+button:hover {
+  border: 2px solid rgb(7, 220, 4);
+}
+
+    </style>
+</head>
+<body>
+    <h1>TICKETS BOOK HERE!</h1>
+    <form action="reservation.html" method="post">
+        <div class="elem-group">
+          <label for="name">FROM</label>
+          <input type="text" id="name" name="TB_name" placeholder="Leaving from" required>
+
+        </div>
+         <div class="elem-group">
+          <label for="name">TO</label>
+          <input type="text" id="name" name="TB_name" placeholder="Going to" required >
+        </div>
+        <div class="elem-group">
+          <label for="email">Your G-mail</label>
+          <input type="email" id="email" name="TB_email" placeholder="xyz@gmail.com" required>
+        </div>
+        <div class="elem-group">
+          <label for="phone">Phone No</label>
+          <input type="tel" id="phone" name="visitor_phone" placeholder="0000000000" required >
+        </div>
+        <hr>
+        <div class="elem-group inlined">
+          <label for="adult">Adults</label>
+          <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="child">Children</label>
+          <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="date">Startting Date</label>
+          <input type="date" id="arrival-date" name="arrival" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="date">Return Date</label>
+          <input type="date" id="arrival-date" name="arrival" required>
+        </div>
+
+        <div class="elem-group">
+          <label for="Class-selection">Select Class</label>
+          <select id="Class-selection" name="Class_preference" required>
+              <option value="">Choose a Class from the List</option>
+              <option value="Air-Conditioned First Class (1AC)">Air-Conditioned First Class (1AC)</option>
+              <option value="Air-Conditioned Two-Tier Class (2AC)">Air-Conditioned Two-Tier Class (2AC)</option>
+              <option value="Air-Conditioned Three-Tier Class (3AC)">Air-Conditioned Three-Tier Class (3AC)</option>
+             <option value="First Class (FC)">First Class (FC)</option>
+             <option value="Sleeper Class (SL) ">Sleeper Class (SL) </option>
+             <option value="Second Class (2S)">Second Class (2S)</option>
+          </select>
+        </div>
+
+        <div class="elem-group">
+          <label for="Payment-Selection">Select Payment Method</label>
+          <select id="Payment-Selection" name="Payment_preference" required>
+            <option value="">Choose Payment Method from List</option>
+            <option value="CC">Credit Card/Debit Card</option>
+            <option value="UPI">Phonepay/Paytm/Gpay/Others</option>
+
+          </select>
+        </div>
+
+
+          <div class="elem-group">
+            <label for =>Amount</label>
+            <select id="">
+              <option value="">1000</option>
+              <option value="">2000</option>
+              <option value="">3000</option>
+            </select>
+          </div>
+
+          <button class="button">Book Tickets</button>
+          <script>
+
+            alert("Booking Sucessfully" );
+          </script>
+        </form>
+
+      </body>
+      </html>
+
+
+
+
+
+
+
