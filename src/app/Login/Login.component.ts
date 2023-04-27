@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    this.service.login(tvalue.subscribe(res=>{
+      this.router.navigate(['/home']);
+  }
+  }
 
   ngOnInit() {
   }

@@ -8,6 +8,7 @@ import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+
   {
     path:'Home',
     component:HomeComponent
@@ -18,7 +19,7 @@ const routes: Routes = [
   },
   {
     path:'Train',
-    component:LoginComponent
+    component:TrainComponent
   },
   {
     path:'TicketStatus',
